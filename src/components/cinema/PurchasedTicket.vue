@@ -45,9 +45,9 @@ const goToHomePage = () => {
 
     <v-divider />
 
-    <v-card-actions class="pt-6">
+    <v-card-actions class="pt-6 flex-column flex-sm-row">
       <v-btn
-          class="text-none d-flex justify-center"
+          class="text-none d-flex justify-center mb-4 mb-sm-0"
           color="primary"
           size="x-large"
           variant="flat"
@@ -60,7 +60,7 @@ const goToHomePage = () => {
       <v-spacer/>
 
       <v-btn
-          class="text-none d-flex justify-center"
+          class="text-none d-flex justify-center ma-0"
           color="green"
           size="x-large"
           variant="flat"

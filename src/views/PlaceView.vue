@@ -68,7 +68,7 @@ const goToBookTicket = () => {
 
     <template v-else>
 
-      <v-card-text>
+      <v-card-text class="pb-0">
         <v-btn
             class="text-none mb-6"
             color="primary"
@@ -86,18 +86,16 @@ const goToBookTicket = () => {
       <v-card-text>
         <v-sheet
             border="sm"
-            class="place pa-4 mr-6"
-            min-width="100%"
+            class="d-flex flex-column align-center overflow-x-auto pa-4"
             rounded="md"
         >
+          <div class="place-screen mx-auto my-8 pt-4 text-center">Screen</div>
 
-          <div class="place-screen mx-auto my-8 text-center">Screen</div>
-
-          <div class="place-wrapper">
+          <div class="ma-auto">
             <div
                 v-for="row in cinemaStore.movieSessionPlaces"
                 :key="row[0].row"
-                class="place-row d-flex align-center"
+                class="d-flex align-center"
             >
               <div class="place-row--label">Row {{ row[0].row }}</div>
               <div
@@ -137,21 +135,11 @@ const goToBookTicket = () => {
 </template>
 
 <style scoped>
-.place-wrapper {
-  max-width: 1250px;
-  overflow-x: auto;
-  margin: 0 auto;
-}
 .place-screen {
   width: 100%;
   max-width: 600px;
   border-top: 4px solid gray;
-  padding-top: 10px;
   font-size: 22px;
-}
-.place-row {
-  min-width: 1250px;
-  display: flex;
 }
 .place-row--label {
   min-width: 55px;

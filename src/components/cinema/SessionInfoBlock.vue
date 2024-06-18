@@ -9,10 +9,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="d-flex">
+  <div class="d-flex flex-wrap">
     <v-sheet
         border="sm"
-        class="pa-4 mr-6"
+        class="pa-4 mr-6 mb-6"
         min-width="200"
         rounded="md"
     >
@@ -22,7 +22,7 @@ const props = defineProps({
 
     <v-sheet
         border="sm"
-        class="pa-4 mr-6"
+        class="pa-4 mr-6 mb-6"
         min-width="200"
         rounded="md"
     >
@@ -32,7 +32,7 @@ const props = defineProps({
 
     <v-sheet
         border="sm"
-        class="pa-4 mr-6"
+        class="pa-4 mr-6 mb-6"
         min-width="200"
         rounded="md"
     >
@@ -42,7 +42,7 @@ const props = defineProps({
 
     <v-sheet
         border="sm"
-        class="pa-4"
+        class="pa-4 mb-6"
         min-width="200"
         rounded="md"
     >

@@ -16,17 +16,17 @@ onMounted(async () => {
 <template>
   <v-card variant="flat">
     <v-row>
-      <v-col md="3">
+      <v-col xs="12" sm="12" md="12" lg="6" xl="3">
         <v-img :src="cinemaStore.movie.image"  />
       </v-col>
-      <v-col md="6">
+      <v-col xs="12" sm="12" md="12" lg="6" xl="6">
         <v-card-title class="text-h4 font-weight-bold mt-n3">{{ cinemaStore.movie.name }}</v-card-title>
         <v-card-text>
           <div class="movie-additional" v-html="cinemaStore.movie.additional" />
           <p class="mt-8" v-html="cinemaStore.movie.description" />
         </v-card-text>
       </v-col>
-      <v-col md="3">
+      <v-col xs="12" sm="12" md="12" lg="12" xl="3">
         <SessionSchedule />
       </v-col>
     </v-row>

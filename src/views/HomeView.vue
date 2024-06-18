@@ -25,10 +25,9 @@ onMounted(async () => {
         <v-col
             v-for="movie in cinemaStore.movies"
             :key="movie.id"
-            xs="6"
-            sm="4"
-            md="2"
-            lg="3"
+            xs="12"
+            sm="6"
+            md="4"
             xl="3"
         >
           <MovieCard :movie="movie" />
