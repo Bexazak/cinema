@@ -1,10 +1,10 @@
-# Cinema TEST
+# Cinema TEST <br><br> [Demo](https://bexazak.github.io/cinema/)
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Stack
+- Vue3, Composition API
+- Vite
+- Pinia
+- Vue Router 4
 
 ## Project Setup
 
